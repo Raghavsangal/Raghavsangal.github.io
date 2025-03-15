@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #222;
+            background-color: #343a40;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         nav ul {
@@ -25,28 +26,43 @@
         }
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-size: 18px;
             font-weight: bold;
         }
         section {
-            padding: 20px;
-            margin: 20px;
+            padding: 40px;
+            margin: 30px auto;
             background: white;
+            max-width: 1000px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 3px solid #343a40;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #222;
+            padding: 20px;
+            background-color: #343a40;
             color: white;
             position: relative;
             bottom: 0;
             width: 100%;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -60,6 +76,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -67,7 +84,7 @@
     
     <section id="about">
         <h2>About</h2>
-        <p>Experienced Senior Software Engineer with nearly 5 years of expertise in designing, developing, and maintaining scalable microservices and event-driven applications. Proficient in cloud technologies to optimize performance, ensure reliability, and drive cost efficiencies.</p>
+        <p>Experienced Senior Software Engineer with nearly 5 years of expertise in designing, developing, and maintaining scalable microservices and event-driven applications. Passionate about optimizing performance, ensuring reliability, and driving cost efficiencies in cloud-based architectures.</p>
     </section>
     
     <section id="experience">
@@ -76,23 +93,19 @@
             <li><strong>Software Development Engineer 2</strong> - fabric.inc (Aug 2023 – Present)
                 <ul>
                     <li>Led Shopper Identity V3, redefining shopper flows and architecture.</li>
-                    <li>Designed and implemented an in-house Auth Server with high availability and security.</li>
-                    <li>Optimized cloud costs by migrating cache from ElastiCache to Redis Labs (30% cost savings).</li>
+                    <li>Designed and implemented an in-house Auth Server ensuring security, scalability, and active-active disaster recovery.</li>
+                    <li>Configured Networking, Load Balancers, and Route53 Traffic Split for multi-region support.</li>
+                    <li>Reduced cloud costs by migrating cache from ElastiCache to Redis Labs (30% cost savings).</li>
                     <li>Containerized 150+ AWS Lambda functions to ECS, saving $10K monthly.</li>
-                    <li>Worked on Identity Enterprise North Star Solutioning and Data Lake setup.</li>
+                    <li>Drove org-wide adoption of the auth server, leading to $60K yearly savings on Okta.</li>
                 </ul>
             </li>
             <li><strong>Software Development Engineer 1</strong> - fabric.inc (Feb 2022 – Aug 2023)
                 <ul>
                     <li>Developed multi-tenant User Management, RBAC, and Token Introspection solutions.</li>
-                    <li>Reduced account provisioning SLA from 2 days to 15 minutes.</li>
-                    <li>Automated deployments, reducing effort from 3 hours to 5 minutes.</li>
-                </ul>
-            </li>
-            <li><strong>Software Engineer</strong> - DLT Labs (Oct 2020 – Feb 2022)
-                <ul>
-                    <li>Developed critical microservices for asset tracking and batch processing.</li>
-                    <li>Implemented Redis caching to improve system performance by 40%.</li>
+                    <li>Reduced account provisioning SLA from 2 days to 15 minutes by automating processes.</li>
+                    <li>Streamlined deployments by reducing manual effort from 3 hours to 5 minutes.</li>
+                    <li>Implemented real-time logging dashboards in Datadog for monitoring performance.</li>
                 </ul>
             </li>
         </ul>
@@ -100,10 +113,10 @@
     
     <section id="skills">
         <h2>Skills</h2>
-        <p><strong>Programming:</strong> Node.js, TypeScript, JavaScript, Python, SQL</p>
+        <p><strong>Primary Skills:</strong> Node.js, TypeScript, JavaScript, Python, SQL</p>
         <p><strong>Cloud & DevOps:</strong> AWS (ECS, Lambda, API Gateway, S3, RDS), Terraform, Docker, CI/CD</p>
         <p><strong>Database & Caching:</strong> MongoDB, Redis, SQL</p>
-        <p><strong>Other:</strong> System Design, Git, Event-Driven Architecture</p>
+        <p><strong>System Design & Architecture:</strong> Microservices, Event-Driven Systems, Scalability, High Availability</p>
     </section>
     
     <section id="projects">
@@ -111,6 +124,15 @@
         <ul>
             <li><strong>Token Issuer Service:</strong> Secure JWT token generation with role-based access control.</li>
             <li><strong>CommerceGPT fabAI:</strong> AI-powered analytics for merchants using data warehousing and Redshift.</li>
+        </ul>
+    </section>
+    
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Recognized with titles like <em>Bug Squasher, Team Player, Lightning Fast</em> at fabric.inc.</li>
+            <li>Accomplished Expert on Codeforces (Rating 1812, 2019).</li>
+            <li>Ranked 184 out of 55,654 participants in TCS Codevita 2019.</li>
         </ul>
     </section>
     
